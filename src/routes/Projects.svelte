@@ -1,7 +1,7 @@
 <script>
   import img2 from "$lib/images/project.png";
   import img1 from "$lib/images/wahya.png";
-  import img3 from "$lib/images/mySavings.png";
+  import img3 from "$lib/images/my-savings.png";
 
   /** @type {HTMLDivElement} */
   let carousel;

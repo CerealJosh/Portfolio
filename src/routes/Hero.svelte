@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { base } from "$app/paths";
-  import headShot from "$lib/images/headShot.jpg";
+  import headShot from "$lib/images/head-shot.jpg";
 
   const titles = [
     "Software Engineer",
@@ -56,16 +56,13 @@
     <div
       class="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl shrink-0"
     >
-      <img
-        src={headShot}
-        alt="Onu Joshua"
-        class="w-full h-full object-cover"
-      />
+      <img src={headShot} alt="Onu Joshua" class="w-full h-full object-cover" />
     </div>
 
-    <div class="flex flex-row md:flex-col space-x-6 md:space-x-0 md:space-y-12 lg:space-y-16 items-center md:items-start text-center md:text-left">
-      <span
-        class="text-base leading-relaxed text-gray-300 wrap-break-word"
+    <div
+      class="flex flex-row md:flex-col space-x-6 md:space-x-0 md:space-y-12 lg:space-y-16 items-center md:items-start text-center md:text-left"
+    >
+      <span class="text-base leading-relaxed text-gray-300 wrap-break-word"
         >Software Engineer specializing in fullstack development and secure
         financial systems.</span
       >
