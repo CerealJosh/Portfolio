@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { base } from "$app/paths";
+  import headShot from "$lib/images/headShot.jpg";
 
   const titles = [
     "Software Engineer",
@@ -50,16 +51,28 @@
   class="flex flex-col md:flex-row w-fit py-20 lg:py-32 px-8 lg:px-32 lg:pr-[15vw] bg-[#040a0f]/80 backdrop-blur-lg rounded-br-[4rem]"
 >
   <div
-    class="w-[50%] md:w-32 lg:w-24 lg:mr-36 justify-self-start font-semibold flex flex-row md:flex-col space-x-6 md:space-x-0 md:space-y-12 lg:space-y-24 mb-12 md:mb-0 items-center md:items-start"
+    class="w-full md:w-48 lg:w-64 lg:mr-24 justify-self-start font-semibold flex flex-col items-center md:items-start space-y-8 md:space-y-12 lg:space-y-16 mb-12 md:mb-0"
   >
-    <span
-      class="text-base flex-1 md:flex-none leading-relaxed text-gray-300 wrap-break-word"
-      >Software Engineer specializing in fullstack development and secure
-      financial systems.</span
+    <div
+      class="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl shrink-0"
     >
-    <i
-      class="fa-solid fa-arrow-down text-4xl lg:text-7xl -rotate-45 text-blue-500"
-    ></i>
+      <img
+        src={headShot}
+        alt="Onu Joshua"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="flex flex-row md:flex-col space-x-6 md:space-x-0 md:space-y-12 lg:space-y-16 items-center md:items-start text-center md:text-left">
+      <span
+        class="text-base leading-relaxed text-gray-300 wrap-break-word"
+        >Software Engineer specializing in fullstack development and secure
+        financial systems.</span
+      >
+      <i
+        class="fa-solid fa-arrow-down text-4xl lg:text-7xl -rotate-45 text-blue-500"
+      ></i>
+    </div>
   </div>
 
   <div class="flex flex-col mt-4 md:mt-0">

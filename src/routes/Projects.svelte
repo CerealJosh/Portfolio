@@ -1,5 +1,7 @@
 <script>
-  import img2 from "$lib/images/back.jpg";
+  import img2 from "$lib/images/project.png";
+  import img1 from "$lib/images/wahya.png";
+  import img3 from "$lib/images/mySavings.png";
 
   /** @type {HTMLDivElement} */
   let carousel;
@@ -19,6 +21,24 @@
 
   const projects = [
     {
+      id: 2,
+      title: "WahyaPay",
+      category: "Fintech Platform",
+      image: img1,
+      description:
+        "A comprehensive fintech platform designed to streamline peer-to-peer transactions, providing bank-grade security and sub-second payment finality across integrated banking endpoints.",
+      techStack: ["Node.js", "React Native", "PostgreSQL", "Redis"],
+    },
+    {
+      id: 3,
+      title: "MySavings",
+      category: "Financial Savings",
+      image: img3,
+      description:
+        "A collaborative financial savings application empowering local cooperatives to pool funds safely, track individual contribution metrics, and automate rotational payouts.",
+      techStack: ["Spring Boot", "Java", "MySQL", "TailwindCSS"],
+    },
+    {
       id: 1,
       title: "Fire Outbreak Classification",
       category: "IoT & Machine Learning",
@@ -26,24 +46,6 @@
       description:
         "An advanced machine learning system deployed on IoT edge devices tailored to detect, classify, and instantly alert stakeholders about potential fire hazards in structured environments.",
       techStack: ["Python", "TensorFlow", "C#", "IoT"],
-    },
-    {
-      id: 2,
-      title: "WahyaPay",
-      category: "Fintech Platform",
-      image: img2,
-      description:
-        "A comprehensive fintech platform designed to streamline peer-to-peer transactions, providing bank-grade security and sub-second payment finality across integrated banking endpoints.",
-      techStack: ["Node.js", "React Native", "PostgreSQL", "Redis"],
-    },
-    {
-      id: 3,
-      title: "OurGroupFund",
-      category: "Financial Savings",
-      image: img2,
-      description:
-        "A collaborative financial savings application empowering local cooperatives to pool funds safely, track individual contribution metrics, and automate rotational payouts.",
-      techStack: ["Spring Boot", "Java", "MySQL", "TailwindCSS"],
     },
   ];
 
@@ -71,12 +73,15 @@
   }
 </script>
 
-<section id="projects" class="flex flex-col w-full bg-[#040a0f]/80 backdrop-blur-lg py-20 lg:py-32">
+<section
+  id="projects"
+  class="flex flex-col w-full bg-[#040a0f]/80 backdrop-blur-lg py-20 lg:py-32"
+>
   <div class="flex flex-col md:flex-row w-full px-8 lg:px-32 mb-8 lg:mb-16">
     <div
       class="w-full md:w-48 lg:w-11 lg:pr-36 justify-self-start font-semibold flex flex-col mb-4 md:mb-0"
     >
-      <span class="text-xl lg:text-2xl">2024</span>
+      <span class="text-xl lg:text-2xl">2026</span>
     </div>
     <div class="flex flex-col">
       <span class="text-4xl lg:text-5xl font-semibold">Selected Work</span>
@@ -107,12 +112,12 @@
           on:click={() => openModal(project)}
         >
           <div
-            class="w-[85vw] md:w-[65vw] lg:w-[45vw] h-full imgbox relative overflow-hidden rounded-xl"
+            class="w-[82vw] md:w-[60vw] lg:w-[40vw] aspect-3/2 imgbox relative overflow-hidden rounded-xl"
           >
             <img
               src={project.image}
               alt={project.title}
-              class="img w-full h-full object-cover transition-transform duration-700 group-hover/item:scale-105"
+              class="img w-full h-full object-contain transition-transform duration-700 group-hover/item:scale-105"
             />
             <div
               class="absolute inset-0 bg-black/20 group-hover/item:bg-black/0 transition-colors duration-500"
@@ -172,11 +177,11 @@
         <i class="fa-solid fa-xmark text-xl"></i>
       </button>
 
-      <div class="w-full h-64 sm:h-80 md:h-96 relative">
+      <div class="w-full aspect-3/2 relative">
         <img
           src={selectedProject.image}
           alt={selectedProject.title}
-          class="w-full h-full object-cover rounded-t-2xl"
+          class="w-full h-full object-contain rounded-t-2xl"
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-[#0b0d0f] to-transparent"

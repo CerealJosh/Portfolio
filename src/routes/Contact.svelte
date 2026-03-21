@@ -12,7 +12,7 @@
 <section id="contact" class="flex flex-col w-full bg-[#040a0f]/80 backdrop-blur-lg py-20 lg:py-32 px-8 lg:px-32">
   <div class="flex flex-col lg:flex-row w-full mb-16 lg:mb-24">
     <div class="w-full lg:w-20 lg:mr-28 justify-self-start font-semibold flex flex-col mb-8 lg:mb-0">
-      <span class="text-sm uppercase tracking-wide text-gray-400">Tell us about yourself and the project</span>
+      <span class="text-sm uppercase tracking-wide text-gray-400">Have a vision? Let's build it together.</span>
     </div>
     <div class="lg:mr-36 justify-self-start font-semibold flex flex-col space-y-4">
       <span class="text-4xl md:text-5xl lg:text-6xl font-semibold">Get in Touch</span>
@@ -32,7 +32,7 @@
         <input bind:value={email} type="email" placeholder="Your email" class="w-full bg-[#040a0f] border-b-slate-700 border-b-2 pb-3 lg:pb-5 text-lg lg:text-xl transition-colors duration-500 focus:outline-none focus:border-b-blue-500 hover:border-b-blue-500" />
       </div>
       <div class="flex flex-row justify-between py-4 lg:p-6 text-center">
-        <input bind:value={idea} type="text" placeholder="Describe your idea" class="w-full bg-[#040a0f] border-b-slate-700 border-b-2 pb-3 lg:pb-5 text-lg lg:text-xl transition-colors duration-1000 ease-in focus:outline-none focus:border-b-blue-500 hover:border-b-blue-500" />
+        <input bind:value={idea} type="text" placeholder="Share your project idea or vision..." class="w-full bg-[#040a0f] border-b-slate-700 border-b-2 pb-3 lg:pb-5 text-lg lg:text-xl transition-colors duration-1000 ease-in focus:outline-none focus:border-b-blue-500 hover:border-b-blue-500" />
       </div>
     </div>
     <div class="lg:mr-36 justify-self-end font-semibold flex flex-col-reverse pb-4 items-end lg:items-center">
