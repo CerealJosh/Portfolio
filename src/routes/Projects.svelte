@@ -2,6 +2,7 @@
   import img2 from "$lib/images/project.png";
   import img1 from "$lib/images/wahya.png";
   import img3 from "$lib/images/my-savings.png";
+  import img4 from "$lib/images/kinsy.png";
 
   /** @type {HTMLDivElement} */
   let carousel;
@@ -21,7 +22,7 @@
 
   const projects = [
     {
-      id: 2,
+      id: 1,
       title: "WahyaPay",
       category: "Fintech Platform",
       image: img1,
@@ -30,7 +31,7 @@
       techStack: ["Node.js", "React Native", "PostgreSQL", "Redis"],
     },
     {
-      id: 3,
+      id: 2,
       title: "MySavings",
       category: "Financial Savings",
       image: img3,
@@ -39,7 +40,16 @@
       techStack: ["Spring Boot", "Java", "MySQL", "TailwindCSS"],
     },
     {
-      id: 1,
+      id: 3,
+      title: "Kinsy's Fries & Grills",
+      category: "Restaurant Website",
+      image: img4,
+      description:
+        "A vibrant and modern restaurant website for Kinsy's Fries & Grills, Abuja's favorite spot for mouth-watering grills and shawarma. Designed to showcase their bold flavors and offer a seamless menu exploration experience.",
+      techStack: ["Next.js", "TailwindCSS", "Node.js"],
+    },
+    {
+      id: 4,
       title: "Fire Outbreak Classification",
       category: "IoT & Machine Learning",
       image: img2,
