@@ -32,7 +32,7 @@
         >
         <a
           class="text-xl md:text-2xl text-blue-500 hover:text-white transition-colors border-b border-blue-500 hover:border-white pb-1 w-fit"
-          href="{base}/Onu Joshua Menayo - Resume.pdf"
+          href="{base}/Joshua Menayo Onu - Resume.pdf"
           download>Resume</a
         >
       </div>

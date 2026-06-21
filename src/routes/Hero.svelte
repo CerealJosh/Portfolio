@@ -86,7 +86,7 @@
       ></span>
     </span>
     <a
-      href="{base}/Onu Joshua Menayo - Resume.pdf"
+      href="{base}/Joshua Menayo Onu - Resume.pdf"
       download
       class="mt-6 md:mt-12 px-8 py-3 lg:px-12 lg:py-4 w-fit border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white rounded-full transition-colors text-lg lg:text-xl font-semibold flex items-center gap-4 group/btn"
     >
