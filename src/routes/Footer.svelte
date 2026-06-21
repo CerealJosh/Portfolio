@@ -40,7 +40,7 @@
     <div class="flex flex-col space-y-4 text-left md:text-right">
       <a
         class="text-lg md:text-xl text-slate-400 hover:text-white transition-colors"
-        href="https://www.linkedin.com/in/joshua-onu-87490b280/"
+        href="https://www.linkedin.com/in/joshua-o-87490b280"
         target="_blank">LinkedIn</a
       >
       <a
